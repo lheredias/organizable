@@ -1,0 +1,25 @@
+.icon {
+  color: var(--white);
+  background: var(--white-opacity);
+  width: 25px;
+  height: 25px;
+  padding: 0.2em;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  border-radius: 100px;
+  /* text-align: center; */
+  transition: 300ms background;
+}
+
+/* With icon */
+.aside__icon {
+  height: 1.2em;
+  margin-top: .1em;
+  margin-right: 0.5em;
+  float: left;
+}
+
+.icon:hover {
+  background: var(--grey);
+}

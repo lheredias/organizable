@@ -1,0 +1,139 @@
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(0); 
+  transform: translate(-50%, -50%);
+  /* background-color: white; */
+  padding: 1rem 1.5rem;
+  width: 30rem;
+  border-radius: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 160px);
+  /* grid-template-rows: repeat(1, 1fr);  */
+}
+
+.modal-body-colors {
+  /* position: absolute; */
+  padding: 1rem 1.5rem;
+  width: 24rem;
+  border-radius: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 60px);
+  grid-template-rows: repeat(3, 60px);
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-body-create {
+  position: relative;
+  /* padding: 1rem 1.5rem; */
+  /* width: 24rem; */
+  border-radius: 0.5rem;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  /* flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; */
+}
+
+.board-modal {
+  width: 250px;
+  height: 150px;
+  border-radius: 8px;
+  /* padding: 20px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* grid-template-rows: 20px 1fr 40px; */
+  /* cursor: move; */
+}
+
+.create-board-form {
+  padding: 1em;
+  /* display: flex; */
+  /* flex-direction: column;
+  justify-content: space-between; */
+}
+
+.modal-option {
+  display: block;
+  background: var(--white);
+  border-radius: 8px;
+  width: 50px;
+  height: 50px;
+  align-self: center;
+  justify-self: center;
+  filter: drop-shadow(0 0 0 rgba(0, 0, 0, 0));
+  transition: 200ms all;
+  cursor: pointer;
+}
+
+.modal-option:hover {
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.4));
+}
+
+.modal-option--red {
+  background-color: var(--red);
+}
+.modal-option--orange {
+  background-color: var(--orange);
+}
+.modal-option--green {
+  background-color: var(--green);
+}
+.modal-option--light-green {
+  background-color: var(--light-green);
+}
+.modal-option--sky-blue {
+  background-color: var(--sky-blue);
+}
+.modal-option--gray {
+  background-color: var(--gray);
+}
+.modal-option--blue {
+  background-color: var(--blue);
+}
+.modal-option--purple {
+  background-color: var(--purple);
+}
+.modal-option--pink {
+  background-color: var(--pink);
+}
+
+.close-button {
+  float: right;
+  width: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: lightgray;
+}
+
+.close-button:hover {
+  background-color: darkgray;
+}
+
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1.0);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
